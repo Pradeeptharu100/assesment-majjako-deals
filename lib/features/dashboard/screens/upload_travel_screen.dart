@@ -17,19 +17,16 @@ class UploadTravelScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     logger.d('Login access token : ${loginScreenController.loginData}');
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Upload travel'),
+      ),
       body: Form(
         child: Center(
           child: SafeArea(
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
-                    'Travel data',
-                    style: TextStyle(fontSize: 30),
-                  ),
-                  const SizedBox(height: 30),
                   TextFormField(
                     autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: controller.nameController,

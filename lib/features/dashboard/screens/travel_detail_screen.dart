@@ -11,6 +11,7 @@ class TravelDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         title: const Text('Travel Detail Screen'),
       ),
       body: Obx(() {
